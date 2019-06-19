@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_margin="20dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="4dp"
+        card_view:cardMaxElevation="6dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.globalwebsoft.a8to8.Mytextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"/>
+
+            <Spinner
+                android:id="@+id/spncustominvoiceaddproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_shape"
+                android:layout_margin="20dp"
+                android:visibility="gone">
+
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/select_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Product"
+                android:background="@drawable/edittext_shape"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="18dp"
+                android:editable="false"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                    android:id="@+id/stock_avilabality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_shape"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="18dp"
+                android:editable="false"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                />
+
+
+            <EditText
+                android:id="@+id/product_qty_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:background="@drawable/edittext_shape"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+            <com.globalwebsoft.a8to8.Mytextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/textview_shap"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/add_product"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.v7.widget.CardView>
